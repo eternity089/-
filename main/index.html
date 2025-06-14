@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <img src="../img/logo.png" alt="">
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <div class="nav-container">
+        <nav>
+          <li>primetrans@logistic.ru</li>
+          <li>+7 (817) 000-00-00</li>
+          <li>г.Вологда, ул.Герцена, д.56</li>
+        </nav>
+        <form action="#loginModal">
+          <button class="form-button">Регистрация</button>
+        </form>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- модальное окно -->
+    <section class="modal" id="logupModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2>Авторизация</h2>
+          <a href="#" title="закрыть" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="#2C1800" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="modal-content">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="password" placeholder="Пароль">
+          <button class="form-button" onclick="window.location.href='../order/order.html';">Авторизация</button>
+          <a href="#loginModal">У меня нет аккаунта</a>
+        </div>
+      </div>
+    </section>
+    <section class="modal" id="loginModal">
+      <div class="modal-container">
+        <div class="modal-header">
+          <h2>Регистрация</h2>
+          <a href="#" title="закрыть" class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M1 1L13 13M1 13L13 1L1 13Z" stroke="#2C1800" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="modal-content">
+          <input type="text" placeholder="ФИО">
+          <input type="email" name="email" id="email" placeholder="Email">
+          <input type="password" placeholder="Пароль">
+          <button class="form-button" onclick="window.location.href='../order/order.html';">Регистрация</button>
+          <a href="#logupModal">У меня есть аккаунт</a>
+        </div>
+      </div>
+    </section>
+    <section class="main-page">
+      <div class="main-block">
+        <h1>грузоперевозки по россии и снг</h1>
+        <span>Безопасная доставка вашего груза в любую точку мира</span>
+        <form action="#loginModal">
+          <button class="form-button">Оформить заказ</button>
+        </form>
+      </div>
+    </section>
+    <section class="service">
+      <h2>предоставляемые услуги</h2>
+      <div class="service-container">
+        <div class="service-block1 gradient">
+          <h3>Авиационные перевозки</h3>
+          <p>Грузовые самолеты (большие и малые модели)</p>
+          <img src="../img/service-air.png" alt="">
+          <button class="form-button">Заказать</button>
+        </div>
+        <div class="service-block2 gradient">
+          <h3>Автомобильные перевозки</h3>
+          <p>Фургоны, Микроавтобусы, Грузовики</p>
+          <img src="../img/service-car.png" alt="">
+          <button class="form-button">Заказать</button>
+        </div>
+        <div class="service-block3 gradient">
+          <h3>Железнодорожные перевозки</h3>
+          <p>Цистерны, платформы, контейнеры</p>
+          <img src="../img/service-train.png" alt="">
+          <button class="form-button">Заказать</button>
+        </div>
+        <div class="service-block4 gradient">
+          <h3>Морские и речные перевозки</h3>
+          <p>Контейнеровозы, балкеры и баржи.</p>
+          <img src="../img/service-barge.png" alt="">
+          <button class="form-button">Заказать</button>
+        </div>
+        <div class="service-block5 gradient">
+          <div class="service-content">
+            <h3>Мультимодальные перевозки</h3>
+            <p>Комбинация автотранспорта, железнодорожных вагонов, морских судов и авиации</p>
+          </div>
+          <img src="../img/service-modal-car.png" alt="">
+          <img src="../img/service-modal-air.png" alt="">
+          <button class="form-button">Заказать</button>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <h2>новости</h2>
+      <div class="news-container">
+        <div class="new-block gradient">
+          <h4>График работы 12 - 15 июня</h4>
+          <p>Изменение работы филиалов</p>
+          <button class="form-button">Подробнее</button>
+        </div>
+        <div class="new-block gradient">
+          <h4>График доставок в маркетплейсы в праздничные дни</h4>
+          <p>Изменения в графике работы</p>
+          <button class="form-button">Подробнее</button>
+        </div>
+        <div class="new-block gradient">
+          <h4>Переезд терминала в Твери</h4>
+          <p>Важная информация</p>
+          <button class="form-button">Подробнее</button>
+        </div>
+        <div class="new-block gradient">
+          <h4>Изменение графика работы терминала в Твери</h4>
+          <p>Изменения в графике работы</p>
+          <button class="form-button">Подробнее</button>
+        </div>
+      </div>
+    </section>
+    <section class="reality">
+      <div class="reality-container">
+        <div class="reality-content">
+          <div class="content-block">
+            <h3>Почему выбирают транспортные услуги?</h3>
+            <ul>
+              <li>Обеспечивают быструю и надежную доставку товаров и людей</li>
+              <li>Способствуют развитию торговли, промышленности и сферы услуг</li>
+              <li>Создают условия для международной интеграции и выхода на глобальные рынки</li>
+              <li>Повышают мобильность населения и доступность регионов</li>
+            </ul>
+          </div>
+        </div>
+        <div class="reality-content">
+          <div class="content-block">
+            <h3>Современные реалии</h3>
+            <p>Для повышения эффективности логистики в России активно внедряются цифровые технологии, развиваются
+              мультимодальные маршруты, модернизируется инфраструктура портов, аэропортов и дорог. Важным направлением
+              является создание современных мультимодальных логистических центров, объединяющих разные виды транспорта.
+            </p>
+          </div>
+         <form action="#loginModal">
+           <button class="form-button">Заказать</button>
+         </form>
+        </div>
+        <div class="reality-block gradient">
+          <img src="../img/reality-car.png" alt="">
+          <div class="reality-block-content">
+            <h3>Автомобильный транспорт</h3>
+            <p>Наиболее гибкий способ доставки "от двери до двери" по всей территории РФ.</p>
+          </div>
+        </div>
+        <div class="reality-block gradient">
+          <img src="../img/reality-air.png" alt="">
+          <div class="reality-block-content left">
+            <h3>Авиационные перевозки</h3>
+            <p>Используются для срочных грузов и пассажирских перевозок на дальние расстояния.</p>
+          </div>
+        </div>
+        <div class="reality-block gradient">
+          <img src="../img/reality-barge.png" alt="">
+          <div class="reality-block-content">
+            <h3>Морской транспорт</h3>
+            <p>Важен для международной торговли через порты Балтийского, Черного, Азовского морей и Тихоокеанского
+              региона.</p>
+          </div>
+        </div>
+        <div class="reality-block gradient">
+          <img src="../img/reality-train.png" alt="">
+          <div class="reality-block-content left">
+            <h3>Железнодорожные перевозки</h3>
+            <p>Развитая сеть обеспечивает перевозки на большие расстояния внутри страны и за ее пределами.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="partners">
+      <h2>партнёры</h2>
+      <div class="partners-container">
+        <img src="../img/company1.png" alt="">
+        <img src="../img/company2.png" alt="">
+        <img src="../img/company3.png" alt="">
+        <img src="../img/company4.png" alt="">
+        <img src="../img/company5.png" alt="">
+        <img src="../img/company6.png" alt="">
+      </div>
+    </section>
+    <section class="documentation">
+      <h2>Документация</h2>
+      <div class="documentation-container">
+        <a href="#">Лицензия на перевозку грузов</a>
+        <a href="#">Сертификат соответствия системы менеджмента качества</a>
+        <a href="#">Разрешения и сертификаты на работу с опасными грузами</a>
+        <a href="#">Сертификаты безопасности транспортных средств</a>
+        <a href="#">Письма благодарности от крупных клиентов за качественное выполнение услуг</a>
+        <a href="#">Отзывы и рекомендации от партнерских компаний, подтверждающие уровень сервиса</a>
+        <a href="#">Лицензия на международные перевозки</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-block">
+        <img src="../img/logo.png" alt="">
+      </div>
+      <div class="footer-block block-static">
+        <a href="#">Информация</a>
+        <a href="#">Транспорт</a>
+        <a href="#">Партнеры</a>
+        <a href="#">Документация</a>
+      </div>
+      <div class="footer-block">
+        <a href="#">primetrans@logistic.ru</a>
+        <a href="#">г.Вологда, ул.Герцена, д.56</a>
+        <a href="#">+7 (817) 000-00-00</a>
+      </div>
+      <div class="footer-block static">
+        <div class="button-up" id="button-up">
+          <a href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+              <path d="M2 17L17 2M17 2L32 17M17 2V32" stroke="white" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="icons">
+        <img src="../img/vk.png" alt="">
+        <img src="../img/Telegram.png" alt="">
+        <img src="../img/WhatsApp.png" alt="">
+      </div>
+      <h4>© Силинская Ксения, 2025г.</h4>
+    </div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+
+</html>

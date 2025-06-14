@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Транспортные перевозки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .transport-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .transport-block {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .transport-header {
+            background-color: #3a6ea5;
+            color: white;
+            padding: 12px 15px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        .transport-content {
+            padding: 15px;
+            min-height: 80px;
+        }
+        
+        .transport-description {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+        
+        .transport-button {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+        
+        /* Специфичное расположение блоков */
+        .block-1 { grid-column: 1 / span 2; }
+        .block-2 { grid-column: 1; }
+        .block-3 { grid-column: 2; }
+        .block-4 { grid-column: 1; }
+        .block-5 { grid-column: 2; }
+    </style>
+</head>
+<body>
+    <div class="transport-container">
+        <!-- Авиационные перевозки (занимает всю ширину) -->
+        <div class="transport-block block-1">
+            <div class="transport-header">Авиационные перевозки</div>
+            <div class="transport-content">
+                <div class="transport-description">Грузовые самолеты (большие и малые модели)</div>
+            </div>
+        </div>
+        
+        <!-- Автомобильные перевозки -->
+        <div class="transport-block block-2">
+            <div class="transport-header">Автомобильные перевозки</div>
+            <div class="transport-content">
+                <div class="transport-description">Фургоны, Микроавтобусы, Грузовики</div>
+                <a href="#" class="transport-button">Заказать</a>
+            </div>
+        </div>
+        
+        <!-- Железнодорожные перевозки -->
+        <div class="transport-block block-3">
+            <div class="transport-header">Железнодорожные перевозки</div>
+            <div class="transport-content">
+                <div class="transport-description">Цистерны, платформы, контейнеры</div>
+                <a href="#" class="transport-button">Заказать</a>
+            </div>
+        </div>
+        
+        <!-- Морские и речные перевозки -->
+        <div class="transport-block block-4">
+            <div class="transport-header">Морские и речные перевозки</div>
+            <div class="transport-content">
+                <div class="transport-description">Контейнеровозы, баллеры и баржи</div>
+                <a href="#" class="transport-button">Заказать</a>
+            </div>
+        </div>
+        
+        <!-- Мультимодальные перевозки -->
+        <div class="transport-block block-5">
+            <div class="transport-header">Мультимодальные перевозки</div>
+            <div class="transport-content">
+                <div class="transport-description">Комбинация автотранспорта, железнодорожных вагонов, морских судов и авиации</div>
+                <a href="#" class="transport-button">Заказать</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
